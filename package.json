@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/datasets-afinn-111",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A list of English words rated for valence.",
   "license": "Apache-2.0",
   "author": {
