@@ -24,14 +24,30 @@ limitations under the License.
 
 > A [list][afinn] of English words rated for [valence][valence].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-afinn-111
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@esm/index.mjs';
+var afinn111 = require( '@stdlib/datasets-afinn-111' );
 ```
 
 #### afinn111()
@@ -84,13 +100,8 @@ var words = afinn111();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@esm/index.mjs';
+```javascript
+var afinn111 = require( '@stdlib/datasets-afinn-111' );
 
 var words;
 var dict;
@@ -106,17 +117,80 @@ for ( i = 0; i < len; i++ ) {
     dict[ words[i][0] ] = words[i][1];
 }
 console.dir( dict );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/datasets-afinn-111
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: afinn-111 [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --format fmt          Output format: 'csv' or 'ndjson'.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   The CLI supports two output formats: comma-separated values ([CSV][csv]) and newline-delimited JSON ([NDJSON][ndjson]). The default output format is [CSV][csv].
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ afinn-111
+word,valence
+abandon,-2
+abandoned,-2
+abandons,-2
+...
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 * * *
 
@@ -162,7 +236,7 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -213,6 +287,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/datasets-afinn-111/tree/deno
 [umd-url]: https://github.com/stdlib-js/datasets-afinn-111/tree/umd
 [esm-url]: https://github.com/stdlib-js/datasets-afinn-111/tree/esm
+[branches-url]: https://github.com/stdlib-js/datasets-afinn-111/blob/main/branches.md
 
 [afinn]: http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010
 
@@ -232,7 +307,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/datasets/afinn-96]: https://github.com/stdlib-js/datasets-afinn-96/tree/esm
+[@stdlib/datasets/afinn-96]: https://github.com/stdlib-js/datasets-afinn-96
 
 <!-- </related-links> -->
 
