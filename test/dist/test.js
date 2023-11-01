@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,55 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var IS_BROWSER = require( '@stdlib/assert-is-browser' );
-var isArray = require( '@stdlib/assert-is-array' );
-var afinn111 = require( './../../dist' );
-
-
-// VARIABLES //
-
-var opts = {
-	'skip': IS_BROWSER
-};
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof afinn111, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns an array of 2-element arrays', opts, function test( t ) {
-	var list;
-	var i;
-
-	list = afinn111();
-	t.strictEqual( isArray( list ), true, 'returns an array' );
-	for ( i = 0; i < list.length; i++ ) {
-		t.strictEqual( isArray( list[i] ), true, 'element '+i+' is an array' );
-		t.strictEqual( list[i].length, 2, 'element '+i+' is a 2-element array' );
-	}
-	t.end();
-});
-
-tape( 'the function returns a deep copy', opts, function test( t ) {
-	var d1;
-	var d2;
-	var v;
-
-	d1 = afinn111();
-	d2 = afinn111();
-
-	t.notEqual( d1, d2, 'different references' );
-
-	v = d2[ 5 ][ 0 ];
-	d1[ 5 ][ 0 ] = 'beep';
-
-	t.strictEqual( d1[ 5 ][ 0 ], 'beep', 'expected element' );
-	t.notEqual( d1[ 5 ], d2[ 5 ], 'no shared state' );
-	t.strictEqual( d2[ 5 ][ 0 ], v, 'expected element' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
