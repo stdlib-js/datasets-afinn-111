@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+afinn111 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-afinn-111/tags). For example,
+
+```javascript
 afinn111 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@v0.2.1-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var afinn111 = require( 'path/to/vendor/umd/datasets-afinn-111/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -123,7 +128,7 @@ var words = afinn111();
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
