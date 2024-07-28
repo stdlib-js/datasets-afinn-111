@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/datasets-afinn-111",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A list of English words rated for valence.",
   "license": "Apache-2.0",
   "author": {
@@ -42,18 +42,18 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/cli-ctor": "^0.2.1",
-    "@stdlib/fs-read-file": "^0.2.1",
-    "@stdlib/fs-read-json": "^0.2.1",
-    "@stdlib/streams-node-stdout": "^0.2.1",
-    "@stdlib/utils-copy": "^0.2.1"
+    "@stdlib/cli-ctor": "^0.2.2",
+    "@stdlib/fs-read-file": "^0.2.2",
+    "@stdlib/fs-read-json": "^0.2.2",
+    "@stdlib/streams-node-stdout": "^0.2.2",
+    "@stdlib/utils-copy": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-array": "^0.2.1",
-    "@stdlib/assert-is-browser": "^0.2.1",
-    "@stdlib/assert-is-windows": "^0.2.1",
-    "@stdlib/process-exec-path": "^0.2.1",
-    "@stdlib/regexp-eol": "^0.2.1",
+    "@stdlib/assert-is-array": "^0.2.2",
+    "@stdlib/assert-is-browser": "^0.2.2",
+    "@stdlib/assert-is-windows": "^0.2.2",
+    "@stdlib/process-exec-path": "^0.2.2",
+    "@stdlib/regexp-eol": "^0.2.2",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
