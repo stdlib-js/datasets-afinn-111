@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-afinn-111/tags). For example,
+
+```javascript
 import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@v0.2.2-deno/mod.js';
 ```
 
@@ -96,7 +101,7 @@ var words = afinn111();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@v0.2.2-deno/mod.js';
+import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@deno/mod.js';
 
 var words;
 var dict;
