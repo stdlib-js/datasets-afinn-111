@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@deno/mod.js';
+import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@v0.2.3-deno/mod.js';
 ```
 
 #### afinn111()
@@ -96,7 +96,7 @@ var words = afinn111();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@deno/mod.js';
+import afinn111 from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-afinn-111@v0.2.3-deno/mod.js';
 
 var words;
 var dict;
